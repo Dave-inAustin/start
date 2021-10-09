@@ -1,0 +1,26 @@
+
+class tDwmStatus {
+
+//instance variables
+private:
+   int   _status;
+
+//methods
+public:
+
+   tDwmStatus(int &status): _status(status) {};
+   virtual ~tDwmStatus;
+
+   inline isFatal() { return (_status >= 0); }
+
+protected:
+
+private:
+   // undefined constructors/operators...
+   tDwmStatus();
+   tDwmStatus(const tDwmStatus&);
+   tDwmStatus& operator=(const tDwmStatus&);
+
+};
+
+

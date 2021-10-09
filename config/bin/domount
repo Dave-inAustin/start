@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# dirs="/mnt/..."
+
+
+for i in $dirs
+do
+	echo $i
+	sudo mount $i
+done

@@ -1,0 +1,14 @@
+   /**
+      Short blurb.
+
+      Extended comment.
+
+      \param   foo         [in]     comment
+
+      \param   foo         [in/out] comment
+
+      \param   bar         [out]    comment
+
+      \return XXX
+  */
+

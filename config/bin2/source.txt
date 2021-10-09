@@ -1,0 +1,46 @@
+/**
+   \file       foo.cpp
+   \author     Dave Madden <david.madden@rtx.com>
+   \date       09/14/2021
+
+   \brief Implementation of the FOO class.
+
+*/
+
+//  includes...
+#include "foo.h"
+
+
+namespace nxxx100
+{
+
+
+
+//  globally-scoped globals...
+
+
+//  private globals...
+
+
+//  methods...
+
+
+foo::foo(int &status)
+{
+
+#if 0
+   if (status.isFatal()) {
+      return;
+   }
+#endif
+
+}
+
+foo::~foo()
+{
+}
+
+
+//  protected, private, and static methods...
+
+}; // namespace nxxx100

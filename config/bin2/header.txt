@@ -1,0 +1,84 @@
+/** 
+   \file       foo.h
+   \author     Dave Madden <dmadden999@yahoo.com>
+   \date       09/15/2021
+
+   \brief Declaration of FOO class.
+
+*/
+
+
+#ifndef  ___xxx_FOO_H___
+#define  ___xxx_FOO_H___
+
+
+//  includes...
+#include <stdio.h>
+#include <stdint.h>
+#include <conio.h>
+#include <iostream>
+#include <string>
+#include <sstream>
+#include <algorithm>
+#include <vector>
+#include <map>
+
+using namespace std;
+
+namespace {
+
+
+}
+
+
+
+namespace nxxx100
+{
+
+
+//  defines...
+
+
+//  type declarations (typedefs)...
+
+
+//  constants...
+
+
+//  declarations for globally-scoped globals...
+
+
+//  prototypes...
+
+
+class foo {
+
+//instance variables
+public:
+
+protected:
+
+private:
+
+//methods
+public:
+
+   foo(int &status);
+   virtual ~foo();
+
+protected:
+
+private:
+   // undefined constructors/operators...
+   foo();
+   foo(const foo&);
+   foo& operator=(const foo&);
+
+};
+
+//  inline methods and function macros...
+
+}; // namespace nxxx100
+
+
+#endif // ___xxx_FOO_H___

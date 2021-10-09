@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+powerpc-linux-gnu-objdump -EB -b  elf32-powerpc -M powerpc:e500mc $*
+#powerpc-linux-gnu-objdump -EB -b  elf32-powerpc  $*

@@ -1,0 +1,8 @@
+#!/bin/bash
+# usage:
+# get_deps /test_stuff/testing_files/{sd_bins,testing_bins}/*
+
+for x in $@ ; do
+     readelf -d ${x}
+done | awk '/NEEDED/{gsub(/^.*\[|\].*$/,"");print}' | sort -u
+

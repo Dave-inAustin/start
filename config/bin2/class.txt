@@ -1,0 +1,25 @@
+
+class foo {
+
+//instance variables
+public:
+
+protected:
+
+private:
+
+//methods
+public:
+
+   foo(int &status) {};
+   virtual ~foo() {};
+
+protected:
+
+private:
+   // undefined constructors/operators...
+   foo();
+   foo(const foo&);
+   foo& operator=(const foo&);
+
+};
