@@ -1,12 +1,12 @@
 #!/bin/sh
 
-echo "helo"
-
 bkpFiles=${HOME}/bkp/oldFiles
 echo $bkpFiles
 mkdir -p $bkpFiles
 
-pushd $HOME
+oldpath=`pwd`
+cd $HOME
+
 cp -fp .bash* .git* .vim* .gvim* .profile .mint* $bkpFiles
 
 if [ -d ${HOME}/.ssh ] ; then
@@ -18,12 +18,12 @@ if [ -d ${HOME}/bin ] ; then
    cp -Rp ${HOME}/bin $bkpFiles
 fi
 
-popd
-
+cd $oldpath
 
 if [ -d /usr/share/vim ] ; then
-   cp config/usr/share/vim/apple.vim /usr/share/vim
+   sudo cp config/usr/share/vim/apple.vim /usr/share/vim
 fi
 
 cp -Rp config/bin config/bin2 $HOME
+cp config/home/.* $HOME
 
